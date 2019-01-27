@@ -14,25 +14,25 @@ var pancho;
 var paco1;
 var pepe2;
 
-function preload() {
-  Block = loadImage('imagenes/Block.png');
-	Flag  = loadImage('imagenes/Flag.png');
-	FlagN = loadImage('imagenes/Flag1.png');
-	Bomb  = loadImage('imagenes/bomb.png');
-	BombW = loadImage('imagenes/bomb_win.png');
-	Blank = loadImage('imagenes/revelado.png');
-	Uno   = loadImage('imagenes/uno.png');
-	Dos   = loadImage('imagenes/dos.png');
-	Tres  = loadImage('imagenes/tres.png');
-	Cuatro= loadImage('imagenes/cuatro.png');
-	Cinco = loadImage('imagenes/cinco.png');
-	Seis  = loadImage('imagenes/seis.png');
-	Siete = loadImage('imagenes/siete.png');
-	Ocho  = loadImage('imagenes/ocho.png');
-  poiner= loadImage('imagenes/pointer.png');
-  poiner2= loadImage('imagenes/pointer.png.png');
+//function preload() {
+  //Block = loadImage('imagenes/Block.png');
+	//Flag  = loadImage('imagenes/Flag.png');
+	//FlagN = loadImage('imagenes/Flag1.png');
+	//Bomb  = loadImage('imagenes/bomb.png');
+	//BombW = loadImage('imagenes/bomb_win.png');
+	//Blank = loadImage('imagenes/revelado.png');
+	//Uno   = loadImage('imagenes/uno.png');
+	//Dos   = loadImage('imagenes/dos.png');
+	//Tres  = loadImage('imagenes/tres.png');
+	//Cuatro= loadImage('imagenes/cuatro.png');
+	//Cinco = loadImage('imagenes/cinco.png');
+	//Seis  = loadImage('imagenes/seis.png');
+	//Siete = loadImage('imagenes/siete.png');
+	//Ocho  = loadImage('imagenes/ocho.png');
+  //poiner= loadImage('imagenes/pointer.png');
+  //poiner2= loadImage('imagenes/pointer.png.png');
 
-}
+//}
 
 
 function setup() {
