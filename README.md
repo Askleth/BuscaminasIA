@@ -1,6 +1,6 @@
 # BuscaminasIA
-Codigo para una inteligencia artificial que juega Buscaminas
+Codigo para una inteligencia artificial llamada Paco que juega Buscaminas
 
 Faltan las imagenes.
 
-https://askleth.github.io/BuscaminasIA/
+Mira a Paco jugar: https://editor.p5js.org/Askleth/full/HJfGLDzG4
