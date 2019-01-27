@@ -21,46 +21,61 @@ class cuadro {
   show() {
     stroke(255);
     if (this.hidden) {
-      image(Block,this.pos.x,this.pos.y,scl,scl);
+      stroke(144)
+      rect(this.x,this.y,scl,scl)
+      //image(Block,this.pos.x,this.pos.y,scl,scl);
       if(this.signaled) {
-        image(Flag,this.pos.x,this.pos.y,scl,scl);
-        if (gameState && this.mine == true) {
-          image(BombW,this.pos.x,this.pos.y,scl,scl);
-        }
-        if (gameState && this.mine == false) {
-          image(FlagN,this.pos.x,this.pos.y,scl,scl);
-        }
+        stroke(255,0,0)
+        ellipse(this.x+scl/2,this.y+scl/2,scl);
+        //image(Flag,this.pos.x,this.pos.y,scl,scl);
+        //if (gameState && this.mine == true) {
+          //image(BombW,this.pos.x,this.pos.y,scl,scl);
+        //}
+        //if (gameState && this.mine == false) {
+          //image(FlagN,this.pos.x,this.pos.y,scl,scl);
+        //}
       }
     } else {
       if (this.mine) {
-        image(Bomb,this.pos.x,this.pos.y,scl,scl);
+        stroke(0)
+        ellipse(this.x+scl/2,this.y+scl/2,scl);
+        //image(Bomb,this.pos.x,this.pos.y,scl,scl);
       } else {
-        image(Blank,this.pos.x,this.pos.y,scl,scl);
+        rect(this.x,this.y,scl,scl);
+        //image(Blank,this.pos.x,this.pos.y,scl,scl);
         if (this.nearBombs != 0) {
           switch(this.nearBombs) {
             case 1:
-              image(Uno,this.pos.x,this.pos.y,scl,scl);
+              text("1",this.x+scl/2,this.y+scl/2)
+              //image(Uno,this.pos.x,this.pos.y,scl,scl);
               break;
             case 2:
-              image(Dos,this.pos.x,this.pos.y,scl,scl);
+            text("2",this.x+scl/2,this.y+scl/2)
+              //image(Dos,this.pos.x,this.pos.y,scl,scl);
               break;
             case 3:
-              image(Tres,this.pos.x,this.pos.y,scl,scl);
+              text("3",this.x+scl/2,this.y+scl/2)              
+              //image(Tres,this.pos.x,this.pos.y,scl,scl);
               break;
             case 4:
-              image(Cuatro,this.pos.x,this.pos.y,scl,scl);
+              text("4",this.x+scl/2,this.y+scl/2)              
+              //image(Cuatro,this.pos.x,this.pos.y,scl,scl);
               break;
             case 5:
-              image(Cinco,this.pos.x,this.pos.y,scl,scl);
+              text("5",this.x+scl/2,this.y+scl/2)              
+              //image(Cinco,this.pos.x,this.pos.y,scl,scl);
               break;
             case 6:
-              image(Seis,this.pos.x,this.pos.y,scl,scl);
+              text("6",this.x+scl/2,this.y+scl/2)              
+              //image(Seis,this.pos.x,this.pos.y,scl,scl);
               break;
             case 7:
-              image(Siete,this.pos.x,this.pos.y,scl,scl);
+              text("7",this.x+scl/2,this.y+scl/2)              
+              //image(Siete,this.pos.x,this.pos.y,scl,scl);
               break;
             case 8:
-              image(Ocho,this.pos.x,this.pos.y,scl,scl);
+              text("8",this.x+scl/2,this.y+scl/2)              
+              //image(Ocho,this.pos.x,this.pos.y,scl,scl);
           }
         }
       }
