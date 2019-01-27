@@ -27,11 +27,11 @@ class Player {
     this.learn();
     if (this.numPlayer) {
       stroke(0)
-      ellipse(this.x+scl/2,this.y+scl/2,slc/2)
+      ellipse(this.x+scl/2,this.y+scl/2,scl/2)
       //image(poiner,this.pos.x*scl+scl/4,this.pos.y*scl+scl/4,scl,scl);
     } else {
       stroke(0)
-      ellipse(this.x+scl/2,this.y+scl/2,slc/2)      
+      ellipse(this.x+scl/2,this.y+scl/2,scl/2)      
       //image(poiner2,this.pos.x*scl+scl/4,this.pos.y*scl+scl/4,scl,scl);
     }
     paco.click(cuad[this.pos.x][this.pos.y]);
