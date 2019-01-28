@@ -19,9 +19,11 @@ class cuadro {
   }
 
   show() {
-    stroke(255);
+    stroke(144);
+
     if (this.hidden) {
-      stroke(144)
+      stroke(144);
+      fill(100);
       rect(this.x,this.y,scl,scl)
       //image(Block,this.pos.x,this.pos.y,scl,scl);
       if(this.signaled) {
