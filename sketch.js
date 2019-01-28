@@ -66,7 +66,7 @@ function setup() {
 }
 
 function draw() {
-	background(255);
+	background(0);
 	for(let i = 0; i < rows; i++) {
 		for(let j = 0; j < cols; j++) {
 			cuad[i][j].show();
