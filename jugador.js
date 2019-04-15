@@ -1,7 +1,6 @@
 class Player {
   constructor(numPlayer) {
-    this.pos = createVector(45,42);
-    //this.pos = createVector( floor(random(0,rows)) , floor(random(0,cols)) );
+    this.pos = createVector( floor(random(0,rows)) , floor(random(0,cols)) );
     this.prevpos = this.pos;
     this.mind = "safe";
     this.hiddenBlocks = 0
