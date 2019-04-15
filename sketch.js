@@ -9,10 +9,7 @@ var gameState = false;
 var privilegios = true;
 
 var paco;
-var pepe;
-var pancho;
-var paco1;
-var pepe2;
+
 
 function preload() {
   Block = loadImage('imagenes/Block.png');
@@ -57,12 +54,7 @@ function setup() {
 		}
 	}
 
-
   paco = new Player(true);
-  pepe = new Player();
-  pancho = new Player();
-  paco1 = new Player(true);
-  pepe2 = new Player();
 }
 
 function draw() {
@@ -79,21 +71,8 @@ function draw() {
     setup();
   }
 
-	// if (gameState == true) {
-	// 	for(let i = 0; i < rows; i++) {
-	// 		for(let j = 0; j < cols; j++) {
-	// 			if(cuad[i][j].mine == true) {
-	// 				cuad[i][j].unhide();
-	// 			}
-	// 		}
-	// 	}
-  //  privilegios = false;
-	// }
   paco.guess();
-  // pepe.guess();
-  // pancho.guess();
-  // paco1.guess();
-  // pepe2.guess();
+
   if (flagCounter() == minasSiempre) {
     textSize(50);
     stroke(100,20,255);
@@ -115,7 +94,7 @@ function placeBombs() {
 
 	for (let i = 0; i < rows; i++) {
 		for (let j = 0; j < cols; j++) {
-			let ran = Math.seededRandom();
+			let ran = random();
 			if (cuad[i][j].mine == false) {
 				if (ran < 1/nxn/10) {
 					cuad[i][j].mine = true;
@@ -148,12 +127,9 @@ function mouseReleased() {
           cuad[i][j].unhide();
           cuad[i][j].chain();
         }
-
-
 			}
 		}
 	}
-
 }
 
 
@@ -173,19 +149,4 @@ function flagCounter() {
     }
   }
   return totalFlags;
-}
-
-// the initial seed
-Math.seed = 3;
-
-// in order to work 'Math.seed' must NOT be undefined,
-// so in any case, you HAVE to provide a Math.seed
-Math.seededRandom = function(max, min) {
-  max = max || 1;
-  min = min || 0;
-
-  Math.seed = (Math.seed * 9301 + 49297) % 233280;
-  var rnd = Math.seed / 233280;
-
-  return min + rnd * (max - min);
 }
