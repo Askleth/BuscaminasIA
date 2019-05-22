@@ -119,13 +119,7 @@ class Player {
         }
       }
     }
-    // console.log(this.hiddenBlocks);
-    // this.hiddenBlocks = 0;
 
-    // if (this.pos.x == 0 || this.pos.y == 0) {
-    //   this.pos.x = floor(random(0,rows))
-    //   this.pos.y = floor(random(0,cols))
-    // }
     for(let i = -1; i <=1; i++) {
       for(let j = -1; j <=1 ; j++) {
         if(i == 0 && j == 0) {
